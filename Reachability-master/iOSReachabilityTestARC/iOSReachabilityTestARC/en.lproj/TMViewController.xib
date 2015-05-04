@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="5000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TMViewController">
+            <connections>
+                <outlet property="blockLabel" destination="8" id="10"/>
+                <outlet property="internetConnectionblockLabel" destination="17" id="19"/>
+                <outlet property="internetConnectionnotificationLabel" destination="18" id="20"/>
+                <outlet property="localWifiblockLabel" destination="12" id="14"/>
+                <outlet property="localWifinotificationLabel" destination="13" id="15"/>
+                <outlet property="notificationLabel" destination="9" id="11"/>
+                <outlet property="view" destination="6" id="7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="6">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Internet Block Reachability" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8">
+                    <rect key="frame" x="20" y="96" width="280" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" id="38"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Internet Notification Reachability" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9">
+                    <rect key="frame" x="20" y="125" width="280" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Local Wifi Block" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="12">
+                    <rect key="frame" x="20" y="215" width="280" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Local Wifi Notification" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="13">
+                    <rect key="frame" x="20" y="244" width="280" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="internet connection Block" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="17">
+                    <rect key="frame" x="20" y="415" width="280" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="internet connection Notification" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="18">
+                    <rect key="frame" x="20" y="444" width="280" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="9" firstAttribute="trailing" secondItem="8" secondAttribute="trailing" id="21"/>
+                <constraint firstItem="9" firstAttribute="trailing" secondItem="12" secondAttribute="trailing" id="22"/>
+                <constraint firstItem="8" firstAttribute="top" secondItem="6" secondAttribute="top" constant="96" id="23"/>
+                <constraint firstItem="12" firstAttribute="leading" secondItem="9" secondAttribute="leading" id="24"/>
+                <constraint firstItem="9" firstAttribute="leading" secondItem="8" secondAttribute="leading" id="25"/>
+                <constraint firstItem="13" firstAttribute="centerX" secondItem="6" secondAttribute="centerX" id="26"/>
+                <constraint firstItem="17" firstAttribute="leading" secondItem="18" secondAttribute="leading" id="27"/>
+                <constraint firstAttribute="bottom" secondItem="18" secondAttribute="bottom" constant="103" id="28"/>
+                <constraint firstItem="9" firstAttribute="top" secondItem="8" secondAttribute="bottom" constant="8" symbolic="YES" id="29"/>
+                <constraint firstItem="13" firstAttribute="leading" secondItem="12" secondAttribute="leading" id="30"/>
+                <constraint firstItem="12" firstAttribute="top" secondItem="6" secondAttribute="top" constant="215" id="31"/>
+                <constraint firstItem="17" firstAttribute="trailing" secondItem="13" secondAttribute="trailing" id="32"/>
+                <constraint firstItem="12" firstAttribute="trailing" secondItem="13" secondAttribute="trailing" id="33"/>
+                <constraint firstItem="13" firstAttribute="top" secondItem="12" secondAttribute="bottom" constant="8" symbolic="YES" id="34"/>
+                <constraint firstItem="18" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" id="35"/>
+                <constraint firstItem="18" firstAttribute="top" secondItem="17" secondAttribute="bottom" constant="8" symbolic="YES" id="36"/>
+                <constraint firstItem="17" firstAttribute="leading" secondItem="13" secondAttribute="leading" id="37"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="149" y="331.5"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
